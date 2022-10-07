@@ -1,9 +1,16 @@
+<!--
+  v18_30: recent forum topic
+  v18_41: 상단 바
+  v13: 상단 바 글자
+  19_50넘침
+
+-->
 <!DOCTYPE html>
 <html>
     <head><link href="https://fonts.googleapis.com/css?family=JetBrains+Mono&display=swap" rel="stylesheet" /></head>
     <body>
       <div class="v1_2">
-        <div class="v18_41"><a font-size="10.0em" color="white">염병</a>
+        <div class="v18_41">
           <a class="v13_1" href="C:\Users\jisoo\Desktop\물감검색시스템\paint_finder\src\main\resources\static\Color.html">COLOR</a>
           <a class="v13_1">SURFACE</a>
           <a class="v13_1">BRUSHES</a>
@@ -20,21 +27,18 @@
         <span class="v19_47">Category<br>Brand Name<br>Color Name</span>
         <span class="v19_49">Category<br>Brand Name<br>Color Name</span>
         <span class="v18_39">RECENT UPADATES ></span>
-        <div class="name"></div>
-        <div class="name"></div>
-        <div class="v15_24"></div>
-        <div class="v19_50"></div>
-        <div class="v18_29"></div>
-        <div class="v18_31"></div>
-        <span class="v19_52">Category<br>topic titles blahblahblah...</span>
-        <span class="v19_55">Category<br>topic titles blahblahblah...</span>
-        <div class="v15_25"></div>
         <div class="v18_30"></div>
+        <div class="v18_31"></div>
+        <div class="v15_24"></div>
+        <div class="v18_29"></div>
         <div class="v18_32"></div>
-        <span class="v19_51">RECENT FORUM TOPICS</span>
-        <div class="name"></div>
+        <div class="v15_25"></div>
         <div class="v18_42"></div>
-        <div class="name"></div>
+        <div class="v19_50">
+          <span class="v19_51">RECENT FORUM TOPICS</span>
+          <span class="v19_52">Category<br>topic titles blahblahblah...</span>
+          <span class="v19_55">Category<br>topic titles blahblahblah...</span>
+        </div>
       </div>
     </body>
 </html>
@@ -42,27 +46,31 @@
       box-sizing: border-box;
     }
     body {
-      margin: 0;
-      /*width: 100vw;
-      height: 100vh;
-      font-size: 14px;*/
-    }
-    .v1_2 {
+      margin: 0;  
+      padding: 0;
       width: 100vw;
       height: 100vh;
-      background: rgba(25,255,255,1);
+      overflow-x:hidden;
+      overflow-y:auto;
+    }
+    .v1_2{
+      width: 100%;
+      height: 100%;
+      background: rgba(255,255,255,1);
       opacity: 1;
       /*position: relative;
       top: 0px;
       left: 0px;*/
       overflow: visible;
+      
     }
     .v1_5 {
       width: 100vw;
       color: rgba(0,0,0,1);
       position: absolute;
       top: 240px;
-      left: 413px;
+      /*left: 413px;*/
+      margin: auto;
       font-family: JetBrains Mono;
       font-weight: Bold;
       font-size: 72px;
@@ -74,33 +82,34 @@
       height: 70px;
       background: rgba(0,40,255,1);
       opacity: 1;
-      position: absolute;
+      position: relative;
       top: 110px;
       left: 45px;
       overflow: visible;
-      /*font-size: large;*/
+      display:flex;
+      align-items:center;
     }
-    .v13_1 {
+    .v18_41 a.v13_1 {
       width: 133px;
       color: rgba(255,255,255,1);
       position: relative;
-      top: 126px;
-      /*left: 124px;*/
+      /*top: 126px;
+      left: 124px;*/
       font-family: JetBrains Mono;
       font-weight: Regular;
       font-size: 24px;
       opacity: 1;
       text-align: center;
+      padding: 30px 0;
     }    
-    .v13_2 {
+    .v18_41 a.v13_2 {
       width: 133px;
       color: rgba(217,217,217,1);
       position: relative;
-      top: 126px;
-      /*left: 525px;*/
+      /*top: 126px;
+      left: 525px;*/
       font-family: JetBrains Mono;
       font-weight: Regular;
-      font-size: 24px;
       opacity: 1;
       text-align: right;
     }
@@ -170,12 +179,6 @@
       opacity: 1;
       text-align: left;
     }
-    .name {
-      color: #fff;
-    }
-    .name {
-      color: #fff;
-    }
     .v15_24 {
       width: 225px;
       height: 225px;
@@ -191,7 +194,7 @@
       height: 400px;
       background: rgba(217,217,217,1);
       opacity: 1;
-      position: absolute;
+      position: relative;
       top: 1133px;
       left: 240px;
       overflow: hidden;
@@ -276,9 +279,6 @@
       opacity: 1;
       text-align: left;
     }
-    .name {
-      color: #fff;
-    }
     .v18_42 {
       width: 30px;
       height: 30px;
@@ -291,8 +291,5 @@
       top: 415px;
       left: 133px;
       overflow: hidden;
-    }
-    .name {
-      color: #fff;
     }
     </style>
