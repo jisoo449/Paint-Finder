@@ -9,5 +9,4 @@ public class PaintfinderApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PaintfinderApplication.class, args);
 	}
-
 }
